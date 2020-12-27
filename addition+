@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+
+int main(void)
+{
+    int number = 0;
+    int digit = 0;
+    int sum = 0;
+
+    printf("Enter the five digit number : ");
+    scanf("%d", &number);
+
+    while ( number > 0 )
+    {
+        digit = number % 10;
+        sum = sum + digit;
+        number = number / 10;
+    }
+
+    printf("The sum of the digits is %d", sum);
+
+    return 0;
+}
